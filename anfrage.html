@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)https://getbootstrap.com/docs/4.3/examples/checkout/ -->
+<html lang="en">
+   <head>
+        
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Tristan Kast">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Buchungsanfrage</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/checkout/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="./anfrage_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <!-- Custom styles for this template -->
+    <link href="./anfrage_files/form-validation.css" rel="stylesheet">
+  </head>
+
+  <body class="bg-light" style="padding-bottom: 60px">
+      
+<div style="padding-top: 50px"> 
+<a style="padding-left: 50px; padding-top: 150px;" href="index.html">
+    <img border="0" src="img/back_arrow_icon.png" width="50" height="50">
+</a>
+ </div>
+      
+    <div class="container">
+  <div class="row">
+    <div class="col-md-8 order-md-1">
+    <h2>Buchungsanfrage</h2>
+      </div>
+    <div class="col-md-8 order-md-1">
+      <h4 class="mb-3"></h4>
+      <form class="needs-validation" novalidate="">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">Vorname</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+            <div class="invalid-feedback">
+              Ihr Vorname wird benötigt.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">Nachname</label>
+            <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+            <div class="invalid-feedback">
+              Ihr Nachname wird benötigt.
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email">Email <span class="text-muted"></span></label>
+          <input type="email" class="form-control" id="email" placeholder="" required="">
+          <div class="invalid-feedback">
+            Bitte geben Sie eine gültige Email-Adresse an.
+          </div>
+        </div>
+          
+        <div class="mb-3">
+          <label for="address">Telefonnummer</label>
+          <input type="text" class="form-control" id="address" placeholder="" required="">
+          <div class="invalid-feedback">
+            Bitte geben Sie Ihre Telefonnummer ein.
+          </div>
+        </div>
+          
+        <div class="mb-3">
+          <label for="address">Veranstaltungsdatum</label>
+          <input type="text" class="form-control" id="date" placeholder="" required="">
+          <div class="invalid-feedback">
+            Bitte geben Sie das Datum der Veranstaltung an.
+          </div>
+        </div>
+          
+        <div class="mb-3">
+          <label for="address">Veranstaltungsaddresse</label>
+          <input type="text" class="form-control" id="address" placeholder="" required="">
+          <div class="invalid-feedback">
+            Bitte geben Sie die Adresse der Veranstaltung an.
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <label for="country">Art der Veranstaltung</label>
+            <select class="custom-select d-block w-100" id="typeofact" required="">
+              <option value="">Wählen Sie aus ...</option>
+              <option>Geburtstag</option>
+              <option>Hochzeit</option>
+              <option>Sonstiges</option>
+            </select>
+            <div class="invalid-feedback">
+              Bitte wählen Sie die Art der Veranstaltung aus.
+            </div>
+          </div>
+            
+        
+                
+        </div>
+
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block" type="submit" onclick="sendMail(); return false">Buchungsanfrage unverbindlich abschicken</button>
+
+          
+      </form>
+    </div>
+  </div>
+
+</div>
+<script src="./anfrage_files/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="./anfrage_files/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+<script src="./anfrage_files/form-validation.js">
+</script>
+      
+<script>
+    function sendMail() {
+        
+        window.location.href('mailto:info@cedric-scheibel.de?subject=document.getElementById('typeofact').value&body=body');
+        
+        
+
+    }      
+</script>
+      
+
+
+</body></html>
